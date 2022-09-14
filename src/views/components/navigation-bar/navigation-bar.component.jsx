@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./navigation-bar.styles.scss";
 
@@ -9,14 +9,18 @@ const NavigationBar = () => {
 
         <div className="navbar-logo">
           <div className="navbar-item">
-            <Link to="/"><FontAwesomeIcon className="fa-xl" icon="fa-solid fa-leaf" /></Link>
+            <NavLink to="/"><FontAwesomeIcon className="fa-xl" icon="fa-solid fa-leaf" /></NavLink>
           </div>
         </div>
         <div className="navbar-item">
-          <Link to="/portfolio"><p>Portfolio</p></Link>
+          <NavLink className="custom-underline" to="/portfolio" activeClassName="active">
+            <span>Portfolio</span>
+          </NavLink>
         </div>
         <div className="navbar-item">
-          <Link to="/about"><p>About me</p></Link>
+          <NavLink className="custom-underline" to="/about" activeClassName="active">
+            <span>About me</span>
+          </NavLink>
         </div>
         <div className="navbar-item navbar-right">
           <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-facebook" />
