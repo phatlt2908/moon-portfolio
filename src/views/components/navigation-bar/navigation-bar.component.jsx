@@ -13,10 +13,10 @@ const NavigationBar = () => {
           </div>
         </div>
         <div className="navbar-item">
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/portfolio"><p>Portfolio</p></Link>
         </div>
         <div className="navbar-item">
-          <Link to="/about">About me</Link>
+          <Link to="/about"><p>About me</p></Link>
         </div>
         <div className="navbar-item navbar-right">
           <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-facebook" />

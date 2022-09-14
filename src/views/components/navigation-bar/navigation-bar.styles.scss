@@ -30,6 +30,35 @@
             font-family: var(--font-family-title);
             font-size: var(--font-size-title);
             line-height: 1.4em;
+
+            a {
+                p::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 100%;
+                    height: 0.1em;
+                    background-color: hotpink;
+                    opacity: 0;
+                    transition: opacity 300ms, transform 300ms;
+                }
+
+                p::after {
+                    opacity: 1;
+                    transform: scale(0);
+                    transform-origin: center;
+                }
+
+                p:hover::after,
+                p:focus::after {
+                    transform: scale(1);
+                }
+
+                p.is-active::after {
+                    transform: scale(1)
+                }
+            }
         }
     }
 }
