@@ -8,7 +8,7 @@
     --text-color-light: hsl(0deg 0% 29%);
 
     --font-family-title: 'Amatic SC', cursive;
-    --font-size-title: 24px;
+    --font-size-title: 25px;
 }
 
 body {
@@ -17,6 +17,12 @@ body {
 
 a {
     color: var(--text-color-light);
+}
+
+// Common class
+.d-fixed-top {
+    display: fixed;
+    top: 0;
 }
 
 .custom-underline {
@@ -36,6 +42,7 @@ a {
         opacity: 1;
         transform: scale(0);
         transform-origin: center;
+        z-index: 9;
     }
 
     :hover::after,
@@ -44,6 +51,6 @@ a {
     }
 
     &.active::after {
-        transform: scale(1)
+        transform: scale(1);
     }
 }

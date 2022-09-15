@@ -9,7 +9,7 @@ const NavigationBar = () => {
 
         <div className="navbar-logo">
           <div className="navbar-item">
-            <NavLink to="/"><FontAwesomeIcon className="fa-xl" icon="fa-solid fa-leaf" /></NavLink>
+            <NavLink to="/"><FontAwesomeIcon icon="fa-solid fa-leaf" /></NavLink>
           </div>
         </div>
         <div className="navbar-item">
@@ -23,10 +23,10 @@ const NavigationBar = () => {
           </NavLink>
         </div>
         <div className="navbar-item navbar-right">
-          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-facebook" />
+          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
         </div>
         <div className="navbar-item">
-          B
+        <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-pinterest-p" />
         </div>
       </nav>
     </div>

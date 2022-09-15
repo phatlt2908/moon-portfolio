@@ -4,7 +4,7 @@ import Home from "./views/pages/home/home.component";
 import Portfolio from "./views/pages/portfolio/portfolio.component";
 import About from "./views/pages/about/about.component";
 import NotFound from "./views/pages/not-found/not-found.component";
-import "./assets/App.scss";
+import "./assets/scss/App.scss";
 
 function App() {
   return (
