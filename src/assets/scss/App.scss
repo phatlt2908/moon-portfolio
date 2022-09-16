@@ -47,10 +47,10 @@ a {
 
     :hover::after,
     :focus::after {
-        transform: scale(1);
+        transform: scale(0.8);
     }
 
-    &.active::after {
-        transform: scale(1);
+    &.active span::after {
+        transform: scale(0.8);
     }
 }
