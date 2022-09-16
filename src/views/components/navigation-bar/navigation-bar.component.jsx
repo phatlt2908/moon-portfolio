@@ -26,7 +26,7 @@ const NavigationBar = () => {
           <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
         </div>
         <div className="navbar-item">
-        <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-pinterest-p" />
+          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-pinterest-p" />
         </div>
       </nav>
     </div>

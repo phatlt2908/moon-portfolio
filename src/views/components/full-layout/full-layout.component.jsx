@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./full-layout.styles.scss";
 import Nav from "../navigation-bar/navigation-bar.component";
-
+import Footer from "../footer/footer.component";
 import headerImg from "../../../assets/images/header.png";
 
 const FullLayout = () => {
@@ -12,7 +12,7 @@ const FullLayout = () => {
       </div>
       <div className="sticky-header"><Nav /></div>
       <Outlet />
-      <div>Footer</div>
+      <Footer />
     </div>
   );
 };
