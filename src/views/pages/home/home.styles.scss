@@ -1,0 +1,15 @@
+.home-container {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  .title.is-main {
+    font-size: 6.5em;
+  }
+
+  @media (max-width: 1000px) {
+    .title.is-main {
+      font-size: 4.5em;
+    }
+  }
+}

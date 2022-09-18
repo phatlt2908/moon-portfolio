@@ -1,24 +1,38 @@
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navigation-bar.styles.scss";
+import logoImg from "../../../assets/images/logo.png";
 
 const NavigationBar = () => {
   return (
     <div className="navigation-bar-container">
       <nav className="navbar" role="navigation" aria-label="main navigation">
-
         <div className="navbar-logo">
           <div className="navbar-item">
-            <NavLink to="/"><FontAwesomeIcon icon="fa-solid fa-leaf" /></NavLink>
+            <NavLink to="/">
+              <img
+                className="trans-float-infinite"
+                src={logoImg}
+                alt="Logo"
+              />
+            </NavLink>
           </div>
         </div>
         <div className="navbar-item">
-          <NavLink className="custom-underline" to="/portfolio" activeClassName="active">
+          <NavLink
+            className="custom-underline"
+            to="/portfolio"
+            activeclassname="active"
+          >
             <span>Portfolio</span>
           </NavLink>
         </div>
         <div className="navbar-item">
-          <NavLink className="custom-underline" to="/about" activeClassName="active">
+          <NavLink
+            className="custom-underline"
+            to="/about"
+            activeclassname="active"
+          >
             <span>About me</span>
           </NavLink>
         </div>

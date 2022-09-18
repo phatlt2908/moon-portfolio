@@ -2,7 +2,7 @@
     background-color: var(--background-light);
 
     .navbar {
-        max-width: 90%;
+        max-width: var(--max-width);
         margin: 0 auto;
         display: flex !important;
         align-items: stretch;
@@ -19,11 +19,6 @@
             height: 100%;
             position: absolute;
             left: 50%;
-            transition: all .2s cubic-bezier(.175, .885, .32, 1.275);
-
-            a {
-                color: darkgreen !important;
-            }
         }
 
         .navbar-item {

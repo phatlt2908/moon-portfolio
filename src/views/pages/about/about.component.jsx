@@ -1,9 +1,9 @@
-import './about.styles.scss';
+import "./about.styles.scss";
 
 const About = () => {
   return (
-    <div className='about-container'>
-        About
+    <div className="about-container">
+      About
     </div>
   );
 };

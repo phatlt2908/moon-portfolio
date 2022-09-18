@@ -1,22 +1,41 @@
 // Bulma Import
 @import "~bulma";
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 
 :root {
+    --max-width: 90%;
+
     --background-light: #fdf8f2;
 
     --text-color-light: hsl(0deg 0% 29%);
 
-    --font-family-title: 'Amatic SC', cursive;
+    --font-family-title: "Amatic SC", cursive;
     --font-size-title: 25px;
 }
 
 body {
     background-color: var(--background-light);
+    font-size: 130%;
 }
 
 a {
     color: var(--text-color-light);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-family-title);
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.center-ver-hor {
+    align-items: center;
+    justify-content: center;
 }
 
 // Common class
@@ -27,7 +46,7 @@ a {
 
 .custom-underline {
     ::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 10px;
         left: 0;
@@ -52,5 +71,77 @@ a {
 
     &.active span::after {
         transform: scale(0.8);
+    }
+}
+
+// Transition
+.trans-bounce-in {
+    animation-name: bounceIn;
+    animation-duration: 0.5s;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.trans-float-left {
+    animation-name: floatLeft;
+    animation-duration: 0.5s;
+}
+
+@keyframes floatLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.trans-float-infinite {
+    animation-name: floatInfinite;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floatInfinite {
+    0% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0, 0, 0, 0.6));
+        transform: translatey(0px);
+    }
+    50% {
+        filter: drop-shadow(0 25px 15px 0px rgba(0, 0, 0, 0.2));
+        transform: translatey(-10px);
+    }
+    100% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0, 0, 0, 0.6));
+        transform: translatey(0px);
+    }
+}
+
+.trans-zoom-infinite {
+    animation-name: zoomInfinite;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomfinite {
+    0% {
+        width: 50px;
+    }
+    50% {
+        width: 100px;
+    }
+    100% {
+        width: 50px;
     }
 }
