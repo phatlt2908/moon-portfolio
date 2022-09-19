@@ -9,9 +9,10 @@ const Home = () => {
         <div className="column center-vertical">
           <div className="trans-float-left">
             <h1 className="title is-main">
-              Hi, I'm Mo
-              <FontAwesomeIcon className="fa-flip" icon="fa-solid fa-moon" style={{"--fa-animation-duration": "3s"}} />
-              n.
+              Hi, I'm <span className="no-wrap">Mo
+                <FontAwesomeIcon className="fa-flip" icon="fa-solid fa-moon" style={{ "--fa-animation-duration": "3s" }} />
+                n.
+              </span>
               <br />
               2D Artist.
             </h1>
