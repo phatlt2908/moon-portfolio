@@ -16,9 +16,16 @@
 
         .navbar-logo {
             display: flex;
+            align-items: center;
+            justify-content: center;
             height: 100%;
             position: absolute;
-            left: 50%;
+            left: 0;
+            right: 0;
+            top: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
         }
 
         .navbar-item {
@@ -30,6 +37,15 @@
             font-size: var(--font-size-title);
             line-height: 28px;
             letter-spacing: 2px;
+
+            img {
+                max-height: 2.5rem;
+                transition: max-height 300ms;
+
+                &:hover {
+                    max-height: 3.5rem;
+                }
+            }
         }
     }
 }

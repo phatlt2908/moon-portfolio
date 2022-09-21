@@ -20,7 +20,7 @@ const NavigationBar = () => {
         </div>
         <div className="navbar-item">
           <NavLink
-            className="custom-underline"
+            className="custom-underline-header"
             to="/portfolio"
             activeclassname="active"
           >
@@ -29,7 +29,7 @@ const NavigationBar = () => {
         </div>
         <div className="navbar-item">
           <NavLink
-            className="custom-underline"
+            className="custom-underline-header"
             to="/about"
             activeclassname="active"
           >

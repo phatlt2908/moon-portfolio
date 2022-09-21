@@ -6,7 +6,7 @@ import About from "./views/pages/about/about.component";
 import NotFound from "./views/pages/not-found/not-found.component";
 import "./assets/scss/App.scss";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
