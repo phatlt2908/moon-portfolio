@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer__content">
         <h3 className="title is-2">
-          I occasionally take on
-          <br /> freelance opportunities.
+          I Occasionally Take On
+          <br /> Freelance Opportunities.
         </h3>
         <p>
           {"Have an exciting project where you need some help? "}
