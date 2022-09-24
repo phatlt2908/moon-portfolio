@@ -4,8 +4,12 @@
 
 :root {
     --max-width: 90%;
+    @media (min-width: 1600px) {
+        --max-width: 1600px;
+    }
 
     --background-light: #fdf8f2;
+    --box-background-light: #f1eee7;
 
     --text-color-light: hsl(0deg 0% 29%);
 
@@ -142,14 +146,17 @@ h3 {
 @keyframes floatInfinite {
     0% {
         filter: drop-shadow(5px 10px 7px rgba(0, 0, 0, 0.6));
+        -webkit-filter: drop-shadow(5px 10px 7px rgba(0, 0, 0, 0.6));
         transform: translatey(0px);
     }
     50% {
         filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2));
+        -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.2));
         transform: translatey(-10px);
     }
     100% {
         filter: drop-shadow(5px 10px 7px rgba(0, 0, 0, 0.6));
+        -webkit-filter: drop-shadow(5px 10px 7px rgba(0, 0, 0, 0.6));
         transform: translatey(0px);
     }
 }

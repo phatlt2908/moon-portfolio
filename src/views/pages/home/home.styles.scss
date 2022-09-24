@@ -1,5 +1,4 @@
 .home-container {
-  display: flex;
   max-width: var(--max-width);
   margin: 0 auto;
 
@@ -10,6 +9,105 @@
   @media (max-width: 1000px) {
     .title.is-main {
       font-size: 4.5em;
+    }
+  }
+
+  .home__job-info {
+    margin-top: 2rem;
+
+    .job-info__tile {
+      cursor: pointer;
+      width: 100%;
+      border-radius: 20px;
+      position: relative;
+      display: block;
+      transition: all 0.4s ease-in-out;
+      padding: 3em 3em 4em;
+      background-color: var(--box-background-light);
+      transition: all 0.4s ease-in-out;
+      height: 100%;
+
+      &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+        img {
+          transform: translateY(-3%);
+        }
+      }
+
+      &.job-info__tile--illustration {
+        // display: block !important;
+        background-image: url("https://drive.google.com/uc?export=view&id=14ibQ6hva0u8HUu5zFY8qlIuRG2XLTGRf");
+        width: 100% !important;
+        height: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 100% 0 0 0; /* (img-height / img-width * container-width) */
+        /* (853 / 1280 * 100) */
+
+        .tile__category {
+          position: absolute;
+          left: 1.5em;
+          top: 1.5em;
+
+          @media (min-width: 1230px) {
+            left: auto;
+            right: 60px;
+            top: 90px;
+          }
+        }
+      }
+
+      @media (min-width: 1230px) {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0;
+      }
+
+      .tile__category {
+        display: block;
+        margin-bottom: 1em;
+        letter-spacing: -1px;
+
+        @media (min-width: 1230px) {
+          position: absolute;
+          right: 60px;
+          top: 90px;
+        }
+      }
+
+      .tile__holder {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        &.tile__holder--game-art {
+          img {
+            max-width: 80%;
+            transition: all 0.4s ease-in-out;
+
+            @media (min-width: 1230px) {
+              padding: 90px 0;
+            }
+          }
+        }
+
+        &.tile__holder--ui {
+          img {
+            max-width: 40%;
+            transition: all 0.4s ease-in-out;
+
+            @media (min-width: 1230px) {
+              padding: 90px 0;
+            }
+          }
+        }
+      }
     }
   }
 }
