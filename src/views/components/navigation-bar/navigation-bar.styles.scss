@@ -3,11 +3,11 @@
 
     .navbar {
         max-width: var(--max-width);
-        margin: 0 auto;
+        margin: 0 auto 1rem auto;
         display: flex !important;
         align-items: stretch;
         flex-shrink: 0;
-        min-height: 3.25rem;
+        min-height: 4rem;
         background-color: transparent;
 
         .navbar-right {

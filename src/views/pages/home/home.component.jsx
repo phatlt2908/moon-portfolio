@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./home.styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import helloImg from "../../../assets/images/hello.jpg";
@@ -28,13 +29,15 @@ const Home = () => {
                   />
                   n.
                 </span>
-                <br />
-                2D Artist.
+                <br />a 2D Artist.
               </h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                text ever since the 1500s.{" "}
+                <NavLink to="/about">
+                  <span className="custom-underline-link">More about me</span>.
+                </NavLink>
               </p>
             </div>
           </div>
@@ -56,11 +59,7 @@ const Home = () => {
                 <h2 className="title is-2">UI</h2>
               </div>
               <div className="tile__holder tile__holder--ui">
-                <img
-                  className="trans-bounce-in"
-                  src={uiImg}
-                  alt="hello"
-                />
+                <img className="trans-bounce-in" src={uiImg} alt="hello" />
               </div>
             </div>
           </div>

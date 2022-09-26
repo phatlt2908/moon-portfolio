@@ -1,3 +1,45 @@
 .about-container {
-  
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  .title.is-main {
+    font-size: 2.5em;
+  }
+
+  .about__info {
+    padding-bottom: 3em;
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  .about__history {
+    .history__box {
+      display: flex;
+      border-radius: 15px;
+      background-color: var(--box-background-light);
+      align-items: center;
+
+      .box__block {
+        max-width: 100%;
+
+        .box__block__title {
+          font-family: var(--font-family-title);
+          font-size: 2rem;
+          font-weight: bold;
+        }
+
+        .box__block__detail {
+          font-size: medium;
+        }
+      }
+
+      .box__item {
+        font-weight: bold;
+        font-size: 1.5rem;
+        max-width: 100%;
+        margin-left: auto;
+      }
+    }
+  }
 }
