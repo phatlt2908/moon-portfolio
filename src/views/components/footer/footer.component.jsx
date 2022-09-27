@@ -9,13 +9,13 @@ const Footer = () => {
           I Occasionally Take On
           <br /> Freelance Opportunities.
         </h3>
-        <p>
+        <div>
           {"Have an exciting project where you need some help? "}
           <span className="u-d-block">
             Send me over a message, and{" "}
             <div className="custom-underline-link">let's chat</div>.
           </span>
-        </p>
+        </div>
       </div>
       <div className="footer__contact">
         <span>
