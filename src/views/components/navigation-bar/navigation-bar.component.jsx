@@ -36,10 +36,10 @@ const NavigationBar = () => {
             <span>About me</span>
           </NavLink>
         </div>
-        <div className="navbar-item navbar-right">
+        <div className="navbar-item navbar-right hidden-scale">
           <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
         </div>
-        <div className="navbar-item">
+        <div className="navbar-item hidden-scale">
           <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-pinterest-p" />
         </div>
       </nav>
