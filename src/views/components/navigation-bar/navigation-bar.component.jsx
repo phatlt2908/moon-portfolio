@@ -37,10 +37,16 @@ const NavigationBar = () => {
           </NavLink>
         </div>
         <div className="navbar-item navbar-right hidden-scale">
-          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
+          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-instagram" />
         </div>
         <div className="navbar-item hidden-scale">
-          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-pinterest-p" />
+          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-artstation" />
+        </div>
+        <div className="navbar-item hidden-scale">
+          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-behance" />
+        </div>
+        <div className="navbar-item hidden-scale">
+          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
         </div>
       </nav>
     </div>

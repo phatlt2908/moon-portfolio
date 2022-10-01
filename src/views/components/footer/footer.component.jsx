@@ -19,10 +19,16 @@ const Footer = () => {
       </div>
       <div className="footer__contact">
         <span>
-          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-facebook-f" />
+          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-instagram" />
         </span>
         <span>
-          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-pinterest-p" />
+          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-artstation" />
+        </span>
+        <span>
+          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-behance" />
+        </span>
+        <span>
+          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-facebook-f" />
         </span>
       </div>
     </footer>
