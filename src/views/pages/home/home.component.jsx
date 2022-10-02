@@ -5,9 +5,9 @@ import helloImg from "../../../assets/images/hello.jpg";
 
 const Home = () => {
   const isometricViewImg =
-    "https://drive.google.com/uc?export=view&id=1sEkANgIuVb48HUiO3fDvhuBLYgZUr5T5";
+    "https://drive.google.com/thumbnail?id=1sEkANgIuVb48HUiO3fDvhuBLYgZUr5T5&sz=w1000";
   const uiImg =
-    "https://drive.google.com/uc?export=view&id=1vvP0PoASh54YGBhuQngwFMlwZSuHeOAr";
+    "https://drive.google.com/thumbnail?id=1vvP0PoASh54YGBhuQngwFMlwZSuHeOAr&sz=w600";
 
   return (
     <div className="home-container">

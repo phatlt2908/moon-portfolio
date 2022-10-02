@@ -1,12 +1,41 @@
+import { useState } from "react";
 import "./image-box.styles.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ImageBox = ({ imageUrl }) => {
+const ImageBox = ({ imageId }) => {
+  const [isFullImage, setBoxClass] = useState(false);
+
+  const onClickImg = () => {
+    setBoxClass(!isFullImage);
+  };
+
   return (
-    <div className="image-box-container">
-      <div>
-        <img class="grid-item" src={imageUrl} alt="porforlio" />
-        <p>ABC</p>
+    <div
+      className={"image-box-container " + (isFullImage ? "full" : "")}
+      onClick={onClickImg}
+    >
+      <div className="content">
+        <img
+          className="grid-item"
+          src={"https://drive.google.com/thumbnail?id=" + imageId + "&sz=w500"}
+          alt="porforlio thumbnail"
+        />
       </div>
+
+      {isFullImage && (
+        <div className="full">
+          <div className="full-image">
+            <div className="closeBtn">
+              <FontAwesomeIcon className="fa-lg" icon="fa-solid fa-x" />
+            </div>
+            <img
+              className="grid-item"
+              src={"https://drive.google.com/uc?id=" + imageId}
+              alt="porforlio full"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

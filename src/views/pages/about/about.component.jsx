@@ -2,7 +2,7 @@ import "./about.styles.scss";
 
 const About = () => {
   const avatarImg =
-    "https://drive.google.com/uc?export=view&id=1Kwy2Y6dwq1BqB4NrdlEvMnd-wkzyxx3I";
+    "https://drive.google.com/thumbnail?id=1Kwy2Y6dwq1BqB4NrdlEvMnd-wkzyxx3I&sz=w600";
 
   return (
     <div className="about-container">
