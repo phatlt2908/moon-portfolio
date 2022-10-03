@@ -6,4 +6,13 @@
         columns: 3 250px;
         column-gap: 1.5rem;
     }
+
+    .tabs {
+        font-size: inherit;
+
+        li.is-active a {
+            border-bottom-color: hotpink;
+            color: hotpink;
+        }
+    }
 }
