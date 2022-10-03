@@ -19,6 +19,7 @@ const ImageBox = ({ imageId }) => {
           className="grid-item"
           src={"https://drive.google.com/thumbnail?id=" + imageId + "&sz=w500"}
           alt="porforlio thumbnail"
+          referrerpolicy="no-referrer"
         />
       </div>
 
