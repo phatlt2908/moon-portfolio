@@ -13,6 +13,7 @@ const About = () => {
               className="trans-bounce-in border-radius-20"
               src={avatarImg}
               alt="hello"
+              referrerpolicy="no-referrer"
             />
           </div>
           <div className="column center-vertical">

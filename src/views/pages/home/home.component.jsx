@@ -42,40 +42,47 @@ const Home = () => {
             </div>
           </div>
           <div className="column">
-            <img className="trans-bounce-in" src={helloImg} alt="hello" />
+            <img className="trans-bounce-in" src={helloImg} alt="hello" referrerpolicy="no-referrer" />
           </div>
         </div>
       </div>
       <div className="home__job-info">
         <div className="columns">
           <div className="column">
-            <div className="job-info__tile job-info__tile--illustration">
-              <h2 className="title is-2 tile__category">Illustration</h2>
-            </div>
+            <NavLink to="/portfolio?type=illustration">
+              <div className="job-info__tile job-info__tile--illustration">
+                <h2 className="title is-2 tile__category">Illustration</h2>
+              </div>
+            </NavLink>
           </div>
           <div className="column">
-            <div className="job-info__tile">
-              <div className="tile__category">
-                <h2 className="title is-2">UI</h2>
+            <NavLink to="/portfolio?type=ui">
+              <div className="job-info__tile">
+                <div className="tile__category">
+                  <h2 className="title is-2">UI</h2>
+                </div>
+                <div className="tile__holder tile__holder--ui">
+                  <img className="trans-bounce-in" src={uiImg} alt="hello" referrerpolicy="no-referrer" />
+                </div>
               </div>
-              <div className="tile__holder tile__holder--ui">
-                <img className="trans-bounce-in" src={uiImg} alt="hello" />
-              </div>
+            </NavLink>
+          </div>
+        </div>
+        <NavLink to="/portfolio?type=game-art">
+          <div className="job-info__tile">
+            <div className="tile__category">
+              <h2 className="title is-2">Game Art</h2>
+            </div>
+            <div className="tile__holder tile__holder--game-art">
+              <img
+                className="trans-bounce-in"
+                src={isometricViewImg}
+                alt="hello"
+                referrerpolicy="no-referrer"
+              />
             </div>
           </div>
-        </div>
-        <div className="job-info__tile">
-          <div className="tile__category">
-            <h2 className="title is-2">Game Art</h2>
-          </div>
-          <div className="tile__holder tile__holder--game-art">
-            <img
-              className="trans-bounce-in"
-              src={isometricViewImg}
-              alt="hello"
-            />
-          </div>
-        </div>
+        </NavLink>
       </div>
     </div>
   );

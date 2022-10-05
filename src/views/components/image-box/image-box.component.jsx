@@ -33,6 +33,7 @@ const ImageBox = ({ imageId }) => {
               className="grid-item"
               src={"https://drive.google.com/uc?id=" + imageId}
               alt="porforlio full"
+              referrerpolicy="no-referrer"
             />
           </div>
         </div>
