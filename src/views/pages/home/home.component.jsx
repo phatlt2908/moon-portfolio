@@ -32,9 +32,10 @@ const Home = () => {
                 <br />a 2D Artist.
               </h1>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.{" "}
+                I'm a concept artist. My main occupation is to draw concept of
+                game environment. Besides, I like children, since they're cute
+                and pure. That's also the main reason why I love illustrating
+                kid books. It's diverse and colorful.{" "}
                 <NavLink to="/about">
                   <span className="custom-underline-link">More about me</span>.
                 </NavLink>
@@ -42,7 +43,12 @@ const Home = () => {
             </div>
           </div>
           <div className="column">
-            <img className="trans-bounce-in" src={helloImg} alt="hello" referrerpolicy="no-referrer" />
+            <img
+              className="trans-bounce-in"
+              src={helloImg}
+              alt="hello"
+              referrerpolicy="no-referrer"
+            />
           </div>
         </div>
       </div>
@@ -62,7 +68,12 @@ const Home = () => {
                   <h2 className="title is-2">UI</h2>
                 </div>
                 <div className="tile__holder tile__holder--ui">
-                  <img className="trans-bounce-in" src={uiImg} alt="hello" referrerpolicy="no-referrer" />
+                  <img
+                    className="trans-bounce-in"
+                    src={uiImg}
+                    alt="hello"
+                    referrerpolicy="no-referrer"
+                  />
                 </div>
               </div>
             </NavLink>
