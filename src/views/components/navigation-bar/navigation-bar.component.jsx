@@ -10,11 +10,7 @@ const NavigationBar = () => {
         <div className="navbar-logo">
           <div className="navbar-item">
             <NavLink to="/">
-              <img
-                className="trans-float-infinite"
-                src={logoImg}
-                alt="Logo"
-              />
+              <img className="trans-float-infinite" src={logoImg} alt="Logo" />
             </NavLink>
           </div>
         </div>
@@ -46,7 +42,13 @@ const NavigationBar = () => {
           <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-behance" />
         </div>
         <div className="navbar-item hidden-scale">
-          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
+          <a
+            href="https://www.facebook.com/biasWookie"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
+          </a>
         </div>
       </nav>
     </div>
