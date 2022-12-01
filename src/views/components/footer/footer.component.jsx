@@ -28,7 +28,13 @@ const Footer = () => {
           <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-behance" />
         </span>
         <span>
-          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-facebook-f" />
+          <a
+            href="https://www.facebook.com/biasWookie"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-facebook-f" />
+          </a>
         </span>
       </div>
     </footer>
