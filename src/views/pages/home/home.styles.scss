@@ -21,7 +21,6 @@
       border-radius: 20px;
       position: relative;
       display: block;
-      padding: 3em 3em 4em;
       background-color: var(--box-background-light);
       transition: all 0.4s ease-in-out;
       height: 100%;
@@ -36,7 +35,7 @@
 
       &.job-info__tile--illustration {
         // display: block !important;
-        background-image: url("https://drive.google.com/thumbnail?id=14ibQ6hva0u8HUu5zFY8qlIuRG2XLTGRf&sz=w600");
+        background-image: url("https://drive.google.com/thumbnail?id=11u788dL0pQ0oCzYfj6a8TjvhrxnDL56M&sz=w600");
         width: 100% !important;
         height: 0;
         background-size: contain;
@@ -57,15 +56,12 @@
         }
       }
 
-      @media (min-width: 1230px) {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding: 0;
-      }
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
 
       .tile__category {
         display: block;
@@ -82,28 +78,24 @@
       .tile__holder {
         position: relative;
         max-width: 100%;
-        margin: 0 auto;
         text-align: center;
 
-        &.tile__holder--game-art {
+        &.tile__holder--large {
           img {
-            max-width: 80%;
+            max-width: 100%;
             transition: all 0.4s ease-in-out;
 
             @media (min-width: 1230px) {
-              padding: 90px 0;
+              padding: 5% 0;
             }
           }
         }
 
-        &.tile__holder--ui {
+        &.tile__holder--small {
           img {
-            max-width: 40%;
             transition: all 0.4s ease-in-out;
-
-            @media (min-width: 1230px) {
-              padding: 90px 0;
-            }
+            max-width: 90%;
+            padding: 5% 0;
           }
         }
       }

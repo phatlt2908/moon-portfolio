@@ -4,11 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import helloImg from "../../../assets/images/hello.jpg";
 
 const Home = () => {
-  const isometricViewImg =
-    "https://drive.google.com/thumbnail?id=1sEkANgIuVb48HUiO3fDvhuBLYgZUr5T5&sz=w1000";
-  const uiImg =
-    "https://drive.google.com/thumbnail?id=1vvP0PoASh54YGBhuQngwFMlwZSuHeOAr&sz=w600";
-
   return (
     <div className="home-container">
       <div className="home__describe">
@@ -55,22 +50,26 @@ const Home = () => {
       <div className="home__job-info">
         <div className="columns">
           <div className="column">
-            <NavLink to="/portfolio?type=illustration">
-              <div className="job-info__tile job-info__tile--illustration">
-                <h2 className="title is-2 tile__category">Illustration</h2>
+            <NavLink to="/portfolio">
+              <div className="job-info__tile">
+                <div className="tile__holder tile__holder--small">
+                  <img
+                    className="trans-bounce-in"
+                    src="https://drive.google.com/thumbnail?id=11u788dL0pQ0oCzYfj6a8TjvhrxnDL56M&sz=w600"
+                    alt="hello"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
               </div>
             </NavLink>
           </div>
           <div className="column">
-            <NavLink to="/portfolio?type=ui">
+            <NavLink to="/portfolio">
               <div className="job-info__tile">
-                <div className="tile__category">
-                  <h2 className="title is-2">UI</h2>
-                </div>
-                <div className="tile__holder tile__holder--ui">
+                <div className="tile__holder tile__holder--small">
                   <img
                     className="trans-bounce-in"
-                    src={uiImg}
+                    src="https://drive.google.com/thumbnail?id=1rqM_40sQH43TnY-8Ej2ST7XbV_TGiDbQ&sz=w600"
                     alt="hello"
                     referrerpolicy="no-referrer"
                   />
@@ -79,21 +78,18 @@ const Home = () => {
             </NavLink>
           </div>
         </div>
-        <NavLink to="/portfolio?type=game-art">
+        {/* <NavLink to="/portfolio">
           <div className="job-info__tile">
-            <div className="tile__category">
-              <h2 className="title is-2">Game Art</h2>
-            </div>
-            <div className="tile__holder tile__holder--game-art">
+            <div className="tile__holder tile__holder--large">
               <img
                 className="trans-bounce-in"
-                src={isometricViewImg}
+                src="https://drive.google.com/thumbnail?id=1rqM_40sQH43TnY-8Ej2ST7XbV_TGiDbQ&sz=w1000"
                 alt="hello"
                 referrerpolicy="no-referrer"
               />
             </div>
           </div>
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
