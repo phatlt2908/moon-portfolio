@@ -13,7 +13,12 @@ const Footer = () => {
           {"Have an exciting project where you need some help? "}
           <span className="u-d-block">
             Send me over a message, and{" "}
-            <div className="custom-underline-link">let's chat</div>.
+            <a
+              href="https://www.messenger.com/e2ee/t/6966508806726349"
+              className="custom-underline-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >let's chat</a>.
           </span>
         </div>
       </div>
@@ -23,9 +28,6 @@ const Footer = () => {
         </span>
         <span>
           <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-artstation" />
-        </span>
-        <span>
-          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-behance" />
         </span>
         <span>
           <a

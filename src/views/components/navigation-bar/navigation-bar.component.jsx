@@ -17,7 +17,7 @@ const NavigationBar = () => {
         <div className="navbar-item">
           <NavLink
             className="custom-underline-header"
-            to="/portfolio?type=illustration"
+            to="/portfolio?type=character"
             activeclassname="active"
           >
             <span>Portfolio</span>

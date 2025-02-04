@@ -1,12 +1,18 @@
 import { useState } from "react";
 import "./image-box.styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ImageLoading from "../image-loading/image-loading";
 
-const ImageBox = ({ imageId }) => {
+const ImageBox = ({ image }) => {
   const [isFullImage, setBoxClass] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   const onClickImg = () => {
     setBoxClass(!isFullImage);
+  };
+
+  const onImageLoaded = () => {
+    setLoading(false);
   };
 
   return (
@@ -15,12 +21,17 @@ const ImageBox = ({ imageId }) => {
       onClick={onClickImg}
     >
       <div className="content">
+        {isLoading && <ImageLoading />}
         <img
           className="grid-item"
-          src={"https://drive.google.com/thumbnail?id=" + imageId + "&sz=w500"}
+          src={"https://drive.google.com/thumbnail?id=" + image.id + "&sz=w500"}
           alt="porforlio thumbnail"
-          referrerpolicy="no-referrer"
+          referrerPolicy="no-referrer"
+          onLoad={onImageLoaded}
+          onError={onImageLoaded}
         />
+
+        <p>{image.title}</p>
       </div>
 
       {isFullImage && (
@@ -31,9 +42,13 @@ const ImageBox = ({ imageId }) => {
             </div>
             <img
               className="grid-item"
-              src={"https://drive.google.com/thumbnail?id=" + imageId + "&sz=w1200"}
+              src={
+                "https://drive.google.com/thumbnail?id=" +
+                image.id +
+                "&sz=w1200"
+              }
               alt="porforlio full"
-              referrerpolicy="no-referrer"
+              referrerPolicy="no-referrer"
             />
           </div>
         </div>

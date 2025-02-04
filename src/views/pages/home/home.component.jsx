@@ -42,7 +42,7 @@ const Home = () => {
               className="trans-bounce-in"
               src={helloImg}
               alt="hello"
-              referrerpolicy="no-referrer"
+              referrerPolicy="no-referrer"
             />
           </div>
         </div>
@@ -55,9 +55,9 @@ const Home = () => {
                 <div className="tile__holder tile__holder--small">
                   <img
                     className="trans-bounce-in"
-                    src="https://drive.google.com/thumbnail?id=11u788dL0pQ0oCzYfj6a8TjvhrxnDL56M&sz=w600"
+                    src="https://drive.google.com/thumbnail?id=1cHLUao-pdZ4rvpBvCgIEjio3QLKMzZhc&sz=w600"
                     alt="hello"
-                    referrerpolicy="no-referrer"
+                    referrerPolicy="no-referrer"
                   />
                 </div>
               </div>
@@ -71,7 +71,7 @@ const Home = () => {
                     className="trans-bounce-in"
                     src="https://drive.google.com/thumbnail?id=1rqM_40sQH43TnY-8Ej2ST7XbV_TGiDbQ&sz=w600"
                     alt="hello"
-                    referrerpolicy="no-referrer"
+                    referrerPolicy="no-referrer"
                   />
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Home = () => {
                 className="trans-bounce-in"
                 src="https://drive.google.com/thumbnail?id=1rqM_40sQH43TnY-8Ej2ST7XbV_TGiDbQ&sz=w1000"
                 alt="hello"
-                referrerpolicy="no-referrer"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>

@@ -4,88 +4,117 @@ import "./portfolio.styles.scss";
 import ImageBox from "../../components/image-box/image-box.component";
 import { useState } from "react";
 import { useEffect } from "react";
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 const Portfolio = () => {
-  const [idList, setIdList] = useState([
-    "1QZxRW0qydhBhwFRnLu8DBaByrguu9DQV",
-    "1PcY6aRQY8QkbTjsezwEzni1UMP229ql-",
-    "1oL-e5Rr2xvArNtRfPX6cy2-J86zczqTd",
-    "11u788dL0pQ0oCzYfj6a8TjvhrxnDL56M",
-    "1CMyPC1s_PvDlQceGQjSDWiXZ00nQOC_4",
-    "1-OPcaTo3pq96XQcojQtFQf-bl2bto3qD",
-    "1vyEdXEs8oUxW_Sj8UZP0sGECqaaVbdQJ",
-    "1rqM_40sQH43TnY-8Ej2ST7XbV_TGiDbQ",
-    "1cHLUao-pdZ4rvpBvCgIEjio3QLKMzZhc",
-  ]);
+  const [imageList, setImageList] = useState([]);
 
-  // const useQuery = () => {
-  //   const { search } = useLocation();
-  //   return React.useMemo(() => new URLSearchParams(search), [search]);
-  // };
-  // let type = useQuery().get("type") || "illustration";
+  const useQuery = () => {
+    const { search } = useLocation();
+    return React.useMemo(() => new URLSearchParams(search), [search]);
+  };
+  let type = useQuery().get("type") || "character";
 
-  // useEffect(() => {
-  //   switch (type) {
-  //     case "illustration":
-  //       setIdList([
-  //         "1Z5FHlAxtplC6Y8d8HT67PQ6TOW2YcUHv",
-  //         "14ibQ6hva0u8HUu5zFY8qlIuRG2XLTGRf",
-  //         "1WgJH6zR1U2wMb0YiLdZs6t18rtH9_8T1",
-  //         "1VNA3XIazcnibsYMwCs0Jz8ZSbttmPtrt",
-  //         "1YzE_Vm4GUkNUvsCgTSUBytpy5Xzj6cV5",
-  //       ]);
-  //       break;
+  useEffect(() => {
+    setImageList([]);
+    
+    switch (type) {
+      case "character":
+        setImageList([
+          {
+            id: "1wdKBPSmUkhyKk-CBAMQ7WSWgxT79dBxK",
+            title: "Animal character",
+          },
+          {
+            id: "1z6fPEMqqGyq49Ew8cFtYbpQpu8hIKsXb",
+            title: "Human character",
+          }
+          
+        ]);
+        break;
 
-  //     case "ui":
-  //       setIdList([
-  //         "1vvP0PoASh54YGBhuQngwFMlwZSuHeOAr",
-  //         "1A_6Bc29r7pcf4tYcao-_SnbZnhqBTQ-5",
-  //         "1YRwScdJx3PR8-rdTji9QnTAeOm32bu9X",
-  //         "1OMNxKTT5e_BIP5IXem08EsWNV_1cNYJR",
-  //         "1OMNxKTT5e_BIP5IXem08EsWNV_1cNYJR",
-  //       ]);
-  //       break;
+      case "illustration":
+        setImageList([
+          {
+            id: "1U6lmOi_qjq3tmE5G1xYSCJtZ2CRBzLDv",
+            title: "Side scrolling game",
+          },
+          {
+            id: "1pfoXLsu9JO7nw5kK9R6mzddca_K-RGJh",
+            title: "Illustration",
+          },
+          {
+            id: "1pPlvgGGp6ugey4r0KEeJqWqtqxSSptDU",
+            title: "Southwestern region mood",
+          },
+          {
+            id: "1XifAe_DXMNN0rk-Kalq-vfdtcGmh-rFF",
+            title: "Interior mood",
+          },
+          {
+            id: "193GNfp0Ed7mp3Tlqq5nqSrRCE5uJYyRm",
+            title: "Viking mood with different weather and seasons",
+          },
+          {
+            id: "1rqM_40sQH43TnY-8Ej2ST7XbV_TGiDbQ",
+            title: "The forest",
+          },
+          {
+            id: "1cHLUao-pdZ4rvpBvCgIEjio3QLKMzZhc",
+            title: "Plan of the kingdom",
+          }
+        ]);
+        break;
 
-  //     case "game-art":
-  //       setIdList([
-  //         "1sEkANgIuVb48HUiO3fDvhuBLYgZUr5T5",
-  //         "12Jkcl-HiCIiHZuP7tBKDBVt9b4oQ0Nzf",
-  //         "1yMY7hTHZ3ZyWQHlOtRGnYjarZIinfbH1",
-  //         "1dyqy9km2ewDviOWFQL55Zf_QNI8sQZLS",
-  //         "1vMJJNBscreahhyPisDl8EWJTnLJy3IzH",
-  //         "13fPDk4p6TE4a1mgGhoRdjKaSjlsu5G4K",
-  //         "1FC-OCuIOFqWcEfL4c5l_ku5UdG2z9iTC",
-  //         "1oB3SCOdB_SPePWxOSJ1vaOYGCqrdtMLi",
-  //         "1pZieg82AWjdIrxkd3GzsMz6aDDCSR8Xh",
-  //         "10FmSgh2fBPJrIEVa1coLc-nn-FEaoiVu",
-  //       ]);
-  //       break;
+      case "casual-props":
+        setImageList([
+          {
+            id: "1ioiKf6sO2vtFuclDNQXmP5dmrPMRZsE3",
+            title: "Topography and geology",
+          },
+          {
+            id: "1yUSf74ZlCjseE1ZIh_Sjn-UJrcLVTHQv",
+            title: "Building",
+          },
+          {
+            id: "11u788dL0pQ0oCzYfj6a8TjvhrxnDL56M",
+            title: "Restaurant casual",
+          },
+          {
+            id: "1QZxRW0qydhBhwFRnLu8DBaByrguu9DQV",
+            title: "Casual game",
+          }
+        ]);
+        break;
 
-  //     default:
-  //       break;
-  //   }
-  // }, [type]);
+      default:
+        break;
+    }
+  }, [type]);
 
   return (
     <div className="portfolio-container">
-      {/* <div className="tabs is-centered">
+      <div className="tabs is-centered">
         <ul>
+          <li className={type === "character" ? "is-active" : ""}>
+            <Link to="/portfolio?type=character">Character</Link>
+          </li>
           <li className={type === "illustration" ? "is-active" : ""}>
             <Link to="/portfolio?type=illustration">Illustration</Link>
           </li>
-          <li className={type === "ui" ? "is-active" : ""}>
-            <Link to="/portfolio?type=ui">UI</Link>
-          </li>
-          <li className={type === "game-art" ? "is-active" : ""}>
-            <Link to="/portfolio?type=game-art">Game Art</Link>
+          <li className={type === "casual-props" ? "is-active" : ""}>
+            <Link to="/portfolio?type=casual-props">Casual Props</Link>
           </li>
         </ul>
-      </div> */}
-      <div className="image-list">
-        {idList.map((imageId, index) => {
-          return <ImageBox key={index} imageId={imageId} />;
-        })}
       </div>
+
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+        <Masonry>
+          {imageList.map((image, index) => {
+            return <ImageBox key={index} image={image} />;
+          })}
+        </Masonry>
+      </ResponsiveMasonry>
     </div>
   );
 };
