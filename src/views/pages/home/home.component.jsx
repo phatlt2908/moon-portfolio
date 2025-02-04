@@ -55,7 +55,7 @@ const Home = () => {
                 <div className="tile__holder tile__holder--small">
                   <img
                     className="trans-bounce-in"
-                    src="https://drive.google.com/thumbnail?id=1cHLUao-pdZ4rvpBvCgIEjio3QLKMzZhc&sz=w600"
+                    src="https://drive.google.com/thumbnail?id=1z6fPEMqqGyq49Ew8cFtYbpQpu8hIKsXb&sz=w600"
                     alt="hello"
                     referrerPolicy="no-referrer"
                   />

@@ -25,13 +25,11 @@ const ImageBox = ({ image }) => {
         <img
           className="grid-item"
           src={"https://drive.google.com/thumbnail?id=" + image.id + "&sz=w500"}
-          alt="porforlio thumbnail"
+          alt={image.title}
           referrerPolicy="no-referrer"
           onLoad={onImageLoaded}
           onError={onImageLoaded}
         />
-
-        <p>{image.title}</p>
       </div>
 
       {isFullImage && (
