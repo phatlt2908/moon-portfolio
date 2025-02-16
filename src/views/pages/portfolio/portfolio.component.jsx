@@ -69,6 +69,10 @@ const Portfolio = () => {
       case "casual-props":
         setImageList([
           {
+            id: "1pLOQ5YH7pYZz7USMzhMXdzi2GS1BuAZI",
+            title: "UI",
+          },
+          {
             id: "1ioiKf6sO2vtFuclDNQXmP5dmrPMRZsE3",
             title: "Topography and geology",
           },
