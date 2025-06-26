@@ -29,7 +29,10 @@ const Portfolio = () => {
             id: "1z6fPEMqqGyq49Ew8cFtYbpQpu8hIKsXb",
             title: "Human character",
           }
-          
+          {
+            id: "1oL-e5Rr2xvArNtRfPX6cy2-J86zczqTd",
+            title: "Artsoup"
+          }
         ]);
         break;
 
@@ -62,16 +65,32 @@ const Portfolio = () => {
           {
             id: "1cHLUao-pdZ4rvpBvCgIEjio3QLKMzZhc",
             title: "Plan of the kingdom",
+          },
+          {
+            id: "1vyEdXEs8oUxW_Sj8UZP0sGECqaaVbdQJ",
+            title: "Prop turret"
+          },
+          {
+            id: "1PcY6aRQY8QkbTjsezwEzni1UMP229ql-",
+            title: "Artsoup"
+          },
+          {
+            id: "1FbekLSvoYvQn8GTd4M1QTb76QHr1oFMI",
+            title: "House farm"
+          },
+          {
+            id: "1HfVvMEBbJAky7N3A-Ou3VWrhG5Fbl07c",
+            title: "Plant farm"
+          },
+          {
+            id: "1G5GSrjfJImThVwmdlrRXUgWnY8Xv7FN3",
+            title: "Land background"
           }
         ]);
         break;
 
       case "casual-props":
         setImageList([
-          {
-            id: "1pLOQ5YH7pYZz7USMzhMXdzi2GS1BuAZI",
-            title: "UI",
-          },
           {
             id: "1ioiKf6sO2vtFuclDNQXmP5dmrPMRZsE3",
             title: "Topography and geology",
@@ -87,6 +106,22 @@ const Portfolio = () => {
           {
             id: "1QZxRW0qydhBhwFRnLu8DBaByrguu9DQV",
             title: "Casual game",
+          },
+          {
+            id: "1U5iErC_Ei18Mc9UejJWBUHmJtaJlQpJW",
+            title: "Farm main screen"
+          },
+          {
+            id: "1ka5TsIN0tvofLCZ3m3th-C7nWKxvAeix",
+            title: "UI resources"
+          },
+          {
+            id: "1D76Ejbn3ok5wRWxKw5fmMqAwmnP4wFHB",
+            title: "Casual items"
+          },
+          {
+            id: "1y-9s328qAndX6XKzprW4Uc2TEeGbCqkw",
+            title: "Tiles"
           }
         ]);
         break;
