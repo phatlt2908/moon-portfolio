@@ -28,7 +28,7 @@ const Portfolio = () => {
           {
             id: "1z6fPEMqqGyq49Ew8cFtYbpQpu8hIKsXb",
             title: "Human character",
-          }
+          },
           {
             id: "1oL-e5Rr2xvArNtRfPX6cy2-J86zczqTd",
             title: "Artsoup"
