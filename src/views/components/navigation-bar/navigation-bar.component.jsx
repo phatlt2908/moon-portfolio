@@ -33,13 +33,13 @@ const NavigationBar = () => {
           </NavLink>
         </div>
         <div className="navbar-item navbar-right hidden-scale">
-          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-instagram" />
-        </div>
-        <div className="navbar-item hidden-scale">
-          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-artstation" />
-        </div>
-        <div className="navbar-item hidden-scale">
-          <FontAwesomeIcon className="fa-sm" icon="fa-brands fa-behance" />
+          <a
+            href="mailto:giaoduc297@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon className="fa-sm" icon="fa-solid fa-envelope" />
+          </a>
         </div>
         <div className="navbar-item hidden-scale">
           <a

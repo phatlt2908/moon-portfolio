@@ -18,16 +18,22 @@ const Footer = () => {
               className="custom-underline-link"
               target="_blank"
               rel="noopener noreferrer"
-            >let's chat</a>.
+            >
+              let's chat
+            </a>
+            .
           </span>
         </div>
       </div>
       <div className="footer__contact">
         <span>
-          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-instagram" />
-        </span>
-        <span>
-          <FontAwesomeIcon className="fa-lg" icon="fa-brands fa-artstation" />
+          <a
+            href="mailto:giaoduc297@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon className="fa-sm" icon="fa-solid fa-envelope" />
+          </a>
         </span>
         <span>
           <a

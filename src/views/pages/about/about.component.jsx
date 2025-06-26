@@ -18,7 +18,7 @@ const About = () => {
           </div>
           <div className="column center-vertical">
             <div className="trans-float-left">
-              <h1 className="title is-main">I’m Moon, a 2D Artist.</h1>
+              <h1 className="title is-main">Moon - Nguyễn Minh Hằng</h1>
               <p>
                 I would often study Chemistry major at the University of
                 Science. However,{" "}

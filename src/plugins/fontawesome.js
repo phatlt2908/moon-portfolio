@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
@@ -16,5 +16,6 @@ library.add(
     faPinterestP,
     faArtstation,
     faBehance,
-    faInstagram
+    faInstagram,
+    faEnvelope
 )
